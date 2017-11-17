@@ -1,0 +1,4 @@
+{
+    "Port": 7025,
+    "PostgresHost": "postgres://taxUser:@10.132.50.70:5432/taxAppeal"
+}

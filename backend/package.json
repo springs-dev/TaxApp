@@ -1,0 +1,60 @@
+{
+  "name": "appealmytax",
+  "version": "1.0.0",
+  "description": "Appeal My Tax API ",
+  "main": "index.js",
+  "scripts": {
+    "dev": "NODE_ENV=dev node --max-old-space-size=6000 server/app.js",
+    "start": "NODE_ENV=prod node server/app.js",
+    "test": "NODE_ENV=test nyc mocha server/api --recursive --timeout=3000",
+    "eslint": "eslint server/api",
+    "seed": "NODE_ENV=dev node server/seeds/seed.js"
+  },
+  "dependencies": {
+    "@types/node": "8.0.27",
+    "bluebird": "^3.5.0",
+    "body-parser": "^1.17.2",
+    "bookshelf": "0.10.4",
+    "bookshelf-schema": "0.3.4",
+    "config": "^1.26.2",
+    "cors": "2.8.4",
+    "eslint": "4.6.1",
+    "eslint-config-google": "^0.9.1",
+    "express": "^4.15.4",
+    "knex": "0.13.0",
+    "lodash": "^4.17.4",
+    "mongoose": "^4.11.10",
+    "morgan": "1.8.2",
+    "neat-csv": "^2.1.0",
+    "node-excel-export": "^1.4.2",
+    "node-pdffiller": "0.0.7",
+    "node-uuid": "^1.4.8",
+    "pdffiller": "0.0.10",
+    "pdffiller-stream": "^0.2.0",
+    "pdftk-formfill": "0.0.1",
+    "pg": "7.3.0",
+    "pg-promise": "6.5.1",
+    "should": "^13.1.2",
+    "uuid": "^3.1.0"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "chai-http": "^3.0.0",
+    "eslint-config-standard": "10.2.1",
+    "eslint-plugin-promise": "3.5.0",
+    "eslint-plugin-standard": "3.0.1",
+    "mocha": "^3.5.0",
+    "mongoose-seed-plus": "1.0.0",
+    "nyc": "11.2.1",
+    "standard": "^10.0.3"
+  },
+  "keywords": [
+    "tax",
+    "appeal",
+    "tax",
+    "my",
+    "tax"
+  ],
+  "author": "Jamax d.o.o.",
+  "license": "ISC"
+}
